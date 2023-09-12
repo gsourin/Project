@@ -11,32 +11,89 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar bg-purple-800 flex text-white justify-between p-2">
-            <div
-                class="feature md:flex inset-0 md:w-auto md:bg-purple-800 md:text-white absolute md:static md:mx-48 md:space-x-20 -translate-x-full md:translate-x-0 md:order-2">
-                <div class="fitem cursor-pointer"><button><a href="index.html">Home</a></button></div>
-                <div class="fitem cursor-pointer"><button><a href="about.html">About</a></button></div>
-                <div class="fitem cursor-pointer"><button><a href="skills.html">Skills</a></button></div>
-                <div class="fitem cursor-pointer"><button><a href="projects.html">Projects</a></button></div>
-                <div class="fitem cursor-pointer"><button><a href="contact.html">Contact</a></button></div>
+    <div class="container flex">
+        <div class="box w-screen" id="hb">
+            <div class="navbar bg-purple-800 flex text-white p-2">
+                <ul
+                    class="feature text-lg list-none md:flex inset-0 md:w-auto md:bg-purple-800 md:text-white absolute md:static md:mx-64 md:space-x-20 -translate-x-full md:translate-x-0 md:order-2">
+                    <li class="fitem cursor-pointer w-20 pl-3 hover:shadow-2xl hover:text-orange-500"><button><a href="index.html">Home</a></button></li>
+                    <li class="fitem cursor-pointer w-20 pl-3 hover:shadow-2xl hover:text-orange-500"><button><a href="about.html">About</a></button></li>
+                    <li class="fitem cursor-pointer w-20 pl-3 hover:shadow-2xl hover:text-orange-500"><button><a href="skills.html">Skills</a></button></li>
+                    <li class="fitem cursor-pointer w-20 pl-3 hover:shadow-2xl hover:text-orange-500"><button><a href="projects.html">Projects</a></button></li>
+                    <li class="fitem cursor-pointer w-20 pl-3 hover:shadow-2xl hover:text-orange-500"><button><a href="contact.html">Contact</a></button></li>
+                </ul>
+                <ul class="flex items-center space-x-24">
+                    <li onclick="Open()"><i class="fa-solid ml-2 mt-2 fa-bars cursor-pointer md:hidden"></i>
+                    </li>
+                    <li class="font-bold text-lg md:order-2 md:text-2xl md:font-mono">Sourin Ghosh</li>
+                    <li class=" md:hidden">Hi</i></li>
+                </ul>
             </div>
-            <h3 class="text-base md:order-3 md:pr-20">Portfolio</h3>
-            <h2 class="md:order-1 md:pl-20">Sourin Ghosh</h2>
-            <div class="text-sm cursor-pointer md:hidden">Social</div>
+            <div class="bg-orange-200 p-8">
+                <div class="mt-96 flex justify-center">
+                    <a class="bg-yellow-600 w-24 h-10 rounded-lg font-medium cursor-pointer p-2" href="contact.html">Contact>>></a>
+                </div>
+                <div class="mt-20 border-t-2 border-black">
+                    <div class="logo flex justify-center items-center h-10 space-x-2">
+                        <button><a href="https://www.facebook.com/sourin.ghosh.794?mibextid=ZbWKwL"><i class="fa-brands fa-facebook md:text-3xl md:mt-8 md:pl-8"></i></a></button>
+                        <button><a href="https://www.instagram.com/souringhosh_/"><i class="fa-brands fa-square-instagram md:text-3xl md:mt-8 md:pl-8"></i></a></button>
+                        <button><a href="https://www.linkedin.com/in/sourin-ghosh/?originalSubdomain=in"><i class="fa-brands fa-linkedin md:text-3xl md:mt-8 md:pl-8"></i></a></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bg-orange-200 p-8">
-            <div class="mt-96 flex justify-center">
-                <a class="bg-yellow-600 w-24 h-10 rounded-lg font-medium cursor-pointer p-2" href="contact.html">Contact>>></a>
-            </div>
-            <div class="mt-20 border-t-2 border-black">
-                <div class="logo flex justify-center items-center h-10 space-x-2">
-                    <button><a href="https://www.facebook.com/sourin.ghosh.794?mibextid=ZbWKwL"><i class="fa-brands fa-facebook md:text-3xl md:mt-8 md:pl-8"></i></a></button>
-                    <button><a href="https://www.instagram.com/souringhosh_/"><i class="fa-brands fa-square-instagram md:text-3xl md:mt-8 md:pl-8"></i></a></button>
-                    <button><a href="https://www.linkedin.com/in/sourin-ghosh/?originalSubdomain=in"><i class="fa-brands fa-linkedin md:text-3xl md:mt-8 md:pl-8"></i></a></button>
+        <div class="cont bg-orange-300 text-black h-screen w-screen -translate-x-[35rem] hidden md:hidden" id="bh">
+            <div class="content">
+                <div class="pl-80 pt-3">
+                    <i class="fa-solid fa-xmark text-xl font-bold" onclick="Cross()"></i>
+                </div>
+                <h1 class="text-lg font-bold text-center mt-4">Sourin Ghosh</h1>
+                <div class="flex flex-col space-y-4 pl-4 pt-8">
+                    <a href="./index.html">
+                        <div class="space-x-3">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="font-bold">Home</span>
+                        </div>
+                    </a>
+                    <a href="./about.html">
+                        <div class="space-x-3">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span class="font-bold">About</span>
+                        </div>
+                    </a>
+                    <a href="./skills.html">
+                        <div class="space-x-3">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="font-bold">Skills</span>
+                        </div>
+                    </a>
+                    <a href="./projects.html">
+                        <div class="space-x-3">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span class="font-bold">Projects</span>
+                        </div>
+                    </a>
+                    <a href="./contact.html">
+                        <div class="space-x-3">
+                            <i class="fa-solid fa-address-book"></i>
+                            <span class="font-bold">Contact</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function Open() {
+            document.querySelector('.cont').classList.toggle('-translate-x-[35rem]');
+            document.getElementById('hb').style.display = "none";
+            document.getElementById('bh').style.display = "block";
+        }
+        function Cross() {
+            document.querySelector('.cont').classList.toggle('-translate-x-[35rem]');
+            document.getElementById('hb').style.display = "block";
+            document.getElementById('bh').style.display = "none";
+        }
+    </script>
 </body>
 </html>
